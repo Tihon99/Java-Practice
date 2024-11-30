@@ -1,6 +1,3 @@
-/**
- * Класс Penguin (Пингвин) - подтип Bird
- */
 public class Penguin extends Bird {
     
     public Penguin(String name) {
@@ -8,12 +5,12 @@ public class Penguin extends Bird {
     }
     
     @Override
-    public String makeSound() {
-        return name + " издает характерные для пингвина звуки";
+    public void makeSound() {
+        System.out.println(name + " квакает");
     }
     
     @Override
-    public String move() {
-        return name + " плавает в воде и ходит по земле";
+    public void move() {
+        System.out.println(name + " плавает");
     }
 }

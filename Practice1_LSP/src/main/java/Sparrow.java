@@ -1,6 +1,3 @@
-/**
- * Класс Sparrow (Воробей) - подтип Bird
- */
 public class Sparrow extends Bird {
     
     public Sparrow(String name) {
@@ -8,12 +5,12 @@ public class Sparrow extends Bird {
     }
     
     @Override
-    public String makeSound() {
-        return name + " чирикает";
+    public void makeSound() {
+        System.out.println(name + " чирикает");
     }
     
     @Override
-    public String move() {
-        return name + " летает в воздухе";
+    public void move() {
+        System.out.println(name + " летает");
     }
 }
